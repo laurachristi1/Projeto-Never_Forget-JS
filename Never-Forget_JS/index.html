@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>NeverForget</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body> 
+
+    <div class="frase">
+        <h1 class="aprimore">Aprimore sua <br> performance,</h1>
+        <h1 class="dedique"> dedique-se ao <br> que realmente importa.</h1> 
+    </div>
+
+    <div id="texto"></div>
+    <div id="bot">
+        <div id="caixaOpc">
+            <hgroup class="opcoes">
+                <a href=""><h1 class="opc selected">Foco</h1></a>
+                <a href=""><h1 class="opc">Descanso curto</h1></a>
+                <a href=""><h1 class="opc">Descanso longo</h1></a>
+            </hgroup>
+            <h1 class="tempo">25:00</h1>
+            <div id="mL">
+                <label class="switch">
+                    <input class="check" type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <h1 class="opc">Música</h1>
+            <button id="botC"><h1 class="opc2">Começar</h1></button>
+        </div>
+        <div class="aviso">
+            <h1 class="eA">#Em andamento: </h1>
+            <div class="linha"></div>
+        </div>  
+
+        <div class="conteudo">
+           
+            <div class="topo">
+                <input type="text" 
+                    id="inputNovaTarefa"
+                    placeholder="Adicionar uma nova tarefa"
+                    >
+                <button id="btnAddTarefa">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+    
+            <ul id="listaTarefas">
+            </ul>
+        </div>   
+    
+        <div id="janelaEdicao">
+            <button id="janelaEdicaoBtnFechar">
+                <i class="fa fa-remove fa-2x"></i>
+            </button>
+            <h2 id="idTarefaEdicao">#1021</h2>
+            <hr>
+            <form>
+                <div class="frm-linha">
+                    <label class="nn" for="nome">Nome</label>
+                    <input type="text" id="inputTarefaNomeEdicao">
+                </div>
+                <div class="frm-linha">
+                    <button id="btnAtualizarTarefa">Salvar</button>
+                </div>
+            </form>
+        </div>
+        <div id="janelaEdicaoFundo"></div>
+    </div>
+
+    <footer>Desenvolvido pelo João e Laura</footer>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

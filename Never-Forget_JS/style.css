@@ -1,0 +1,462 @@
+@import url('https://fonts.cdnfonts.com/css/delecta');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: hsl(268deg 76% 49%);
+    --cor2: hsl(263deg 69% 43%);
+    --cor3: hsl(253deg 62% 29%);
+    --cor4: hsl(240deg 56% 23%);
+    --cor5: hsl(213deg 82% 4%);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        180deg,
+        var(--cor1) 0%,
+        var(--cor2) 9%,
+        var(--cor3) 27%,
+        var(--cor4) 36%,
+        var(--cor5) 73%,
+        var(--cor5) 82%,
+        var(--cor5) 91%,
+        var(--cor5) 100%
+    );
+    font-family: K2D;
+
+}
+
+
+.frase {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 175px;
+}
+
+.aprimore {
+    color: white;
+    font-family: K2D;
+}
+
+.dedique {
+    margin-top: 30px;
+    font-family: 'K2D';
+    font-weight: 5000;
+    color: white;
+}
+
+#texto {
+    height: 55vh;
+    width: 100vw;
+}
+
+#bot {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#caixaOpc {
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    width: 80vw;
+    max-width: 400px;
+    background-color: rgb(10, 36, 69);
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 36px;
+    border-color: rgb(22, 55, 100);
+    align-items: center;
+    justify-content: space-around;
+    padding: 36px;
+    margin-top: -175px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.opcoes {
+    width: 80vw;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opc {
+    font-family: delecta;
+    color: white;
+    font-size: 18px;
+    font-weight: 200px;
+}
+
+.opc2 {
+    font-family: delecta;
+    color: white;
+    font-size: 26px;
+    font-weight: 200px;
+}
+
+.selected {
+    background-color: rgb(22, 55, 100);
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 12px;
+}
+
+.tempo {
+    font-size: 120px;
+    font-family: delecta;
+    color: white;
+    margin: 0px;
+}
+
+#mL {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    max-width: 400px;
+    justify-content: space-around;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+input:checked + .slider {
+    background-color: rgb(160, 126, 231);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(160, 126, 231);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#botC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    height: 3vw;
+    width: 10vw;
+    max-width: 200px;
+    background: rgb(160, 126, 231);
+    background: linear-gradient(180deg, rgba(160, 126, 231, 1) 5%, rgba(80, 68, 251, 1) 51%, rgba(49, 41, 168, 1) 85%);
+}
+
+.aviso {
+    width: 80vw;
+    max-width: 400px;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.eA {
+    font-family: delecta;
+    color: white;
+    font-size: 20px;
+}
+
+.linha {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
+
+.list {
+    font-family: delecta;
+    font-size: 48px;
+    color: white;
+}
+
+.tarefas {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    border-style: none;
+}
+
+.add {
+    color: rgb(184, 129, 235);
+    margin: none;
+    border-style: none;
+    font-family: delecta;
+    font-size: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 180px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(184, 129, 235);
+    background-color: black;
+}
+
+
+.conteudo {
+    margin: 0 auto;
+    width: 100%;;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 55px;
+    border-radius: 12px;
+}
+
+.topo {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 35px;     
+   
+}
+
+#btnAddTarefa{
+    width: 120px;
+    border-radius: 360px;
+    border: 4px solid hsl(263deg 69% 43%);
+    background: hsl(213deg 82% 4%);
+}
+
+.topo input {
+    width: 350px;
+    padding: 15px;
+    border-radius: 36px;
+    border: 4px solid hsl(263deg 69% 43%);;
+    outline: none;
+    font-size: 1.2rem;
+    background: hsl(213deg 82% 4%);
+    color: white;
+}
+
+.topo button {
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    background: hsl(213deg 82% 4%);
+    color:  white;
+    outline: none;
+}
+
+.topo button:hover {
+    background: #1f1e1e;
+    cursor: pointer;
+}
+
+#listaTarefas {
+    border-radius: 16px;
+    background: hsl(213deg 82% 4%);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li {
+    border: 4px solid hsl(263deg 69% 43%);
+    padding: 20px;
+    background: hsl(213deg 82% 4%);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check{
+    display: none;
+}
+
+.btnAcao {
+    border-radius: 20px;
+    border: 1px solid #191818;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #2b2a2a;
+    color: #FFF;
+    outline: none;
+}
+h2{
+    color: white;
+}
+
+.nn{
+    color:white;
+}
+
+.btnAcao:hover {
+    background: #3c3a3a;
+}
+
+.textoTarefa {
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
+#janelaEdicao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #191818;
+    border: 1px solid #2f2e2e;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+}
+
+#janelaEdicao.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoFundo {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+#janelaEdicaoFundo.abrir {
+   display: block !important;    
+}
+
+#janelaEdicaoBtnFechar {
+    position: absolute;
+    top: -25px;
+    right: -18px; 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2d2c2c;
+    background: #2d2c2c;
+    color: #FFF;
+    outline: none;
+}
+
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.frm-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.frm-linha label {
+    margin-bottom: 7px;
+}
+
+.frm-linha input {
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #191818;
+    font-size: 1.2rem;
+    background: #2d2c2c;
+    color: #FFF;
+}
+
+.frm-linha button {
+    background: #2d2c2c;
+    border: 1px solid #191818;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: #CCC;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.frm-linha button:hover {
+    background: #3c3a3a;
+} 
+
+
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'delecta';
+    font-size: 25px;
+}
+
+
+
